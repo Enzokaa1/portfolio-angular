@@ -1,0 +1,89 @@
+.sobre {
+  min-height: 100vh;
+  background: radial-gradient(circle at left, #020617, #000);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 40px;
+
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 60px;
+}
+
+.sobre-foto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-foto img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+
+  border-radius: 16px;
+  border: 2px solid #1e293b;
+
+  transition: 0.3s;
+}
+
+.sobre-foto img:hover {
+  border-color: #6366f1;
+  transform: scale(1.03);
+}
+
+.sobre-info h1 {
+  font-size: 2.6rem;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.sobre-descricao {
+  color: #cbd5f5;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 520px;
+}
+
+.sobre-dados {
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dado {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.valor {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .sobre-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .sobre-dados {
+    justify-content: center;
+  }
+}

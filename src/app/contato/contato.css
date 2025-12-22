@@ -75,7 +75,6 @@
   transition: 0.3s;
 }
 
-/* Hover sincronizado */
 .card:hover .card-botao {
   background: #6366f1;
   color: #020617;
@@ -116,3 +115,150 @@
   color: white;
 }
 
+.contato {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato-container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contato-info {
+  text-align: center;
+}
+
+.contato-info h1 {
+  font-size: 2.6rem;
+}
+
+.contato-info p {
+  color: #cbd5f5;
+  margin-top: 8px;
+}
+
+.contato-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.contato {
+  min-height: 100vh;
+  background: radial-gradient(circle at right, #020617, #000);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato-container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contato-info {
+  text-align: center;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.contato-info h1 {
+  font-size: 2.6rem;
+}
+
+.contato-info p {
+  color: #cbd5f5;
+  margin-top: 8px;
+}
+
+.contato-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+
+  animation: fadeUp 1s ease forwards;
+}
+
+.card {
+  border: 1px solid #1e293b;
+  padding: 18px 20px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  text-decoration: none;
+  color: white;
+
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.card:hover {
+  border-color: #6366f1;
+  transform: translateY(-4px);
+}
+
+.icone {
+  width: 22px;
+  height: 22px;
+  fill: #6366f1;
+  flex-shrink: 0;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.valor {
+  font-size: 1.05rem;
+}
+
+.card-botao {
+    padding: 8px 14px;
+  border: 2px solid #6366f1;
+  border-radius: 6px;
+
+  color: #6366f1;
+  font-weight: 600;
+  font-size: 0.9rem;
+
+  transition: 0.25s;
+}
+
+.card:hover .card-botao {
+  background: #6366f1;
+  color: #020617;
+}
+
+@media (max-width: 768px) {
+  .contato-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
