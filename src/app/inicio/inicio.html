@@ -1,20 +1,24 @@
+<!-- nome enzo -->
+
 <header class="header-visual">
-  <svg
-    class="estrela"
-    width="18"
-    height="18"
-    viewBox="0 0 24 24"
-    fill="none"
-  >
-    <path
-      d="M12 2L14.9 8.6L22 9.3L16.5 14.1L18.2 21L12 17.5L5.8 21L7.5 14.1L2 9.3L9.1 8.6L12 2Z"
-      fill="#22d3ee"
-    />
-  </svg>
-  <span class="logo">Enzo Castanho</span>
+  <a routerLink="" class="logo-link">
+    <svg
+      class="estrela"
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M12 2L14.9 8.6L22 9.3L16.5 14.1L18.2 21L12 17.5L5.8 21L7.5 14.1L2 9.3L9.1 8.6L12 2Z"
+        fill="currentColor"
+      />
+    </svg>
+
+    <span class="logo">Enzo Castanho</span>
+  </a>
 </header>
 
-
+<!-- routers -->
 
 <header class="header">
   <nav class="nav">
@@ -22,7 +26,7 @@
       <svg class="estrela" width="14" height="14" viewBox="0 0 24 24">
         <path
           d="M12 2L14.9 8.6L22 9.3L16.5 14.1L18.2 21L12 17.5L5.8 21L7.5 14.1L2 9.3L9.1 8.6L12 2Z"
-          fill="#22d3ee"
+          fill="currentColor"
         />
       </svg>
       Início
@@ -32,7 +36,7 @@
       <svg class="estrela" width="14" height="14" viewBox="0 0 24 24">
         <path
           d="M12 2L14.9 8.6L22 9.3L16.5 14.1L18.2 21L12 17.5L5.8 21L7.5 14.1L2 9.3L9.1 8.6L12 2Z"
-          fill="#22d3ee"
+          fill="currentColor"
         />
       </svg>
       Projetos
@@ -42,7 +46,7 @@
       <svg class="estrela" width="14" height="14" viewBox="0 0 24 24">
         <path
           d="M12 2L14.9 8.6L22 9.3L16.5 14.1L18.2 21L12 17.5L5.8 21L7.5 14.1L2 9.3L9.1 8.6L12 2Z"
-          fill="#22d3ee"
+          fill="currentColor"
         />
       </svg>
       Sobre mim
@@ -52,7 +56,7 @@
       <svg class="estrela" width="14" height="14" viewBox="0 0 24 24">
         <path
           d="M12 2L14.9 8.6L22 9.3L16.5 14.1L18.2 21L12 17.5L5.8 21L7.5 14.1L2 9.3L9.1 8.6L12 2Z"
-          fill="#22d3ee"
+          fill="currentColor"
         />
       </svg>
       Contato
@@ -60,6 +64,7 @@
   </nav>
 </header>
 
+<!-- hero -->
 
 <section class="hero">
   <div class="hero-texto">
@@ -68,26 +73,23 @@
       <span>desenvolvedor</span>
     </h1>
 
-    <p>
-      Transformo ideias em sistemas.
-    </p>
+    <p>Transformo ideias em sistemas.</p>
 
-    <button>Saiba mais!</button>
+      <div class="hero-botoes">
+    <button routerLink="/projetos">Ver projetos</button>
+    <button routerLink="/contato">Contatos</button>
   </div>
+</div>
 
   <div class="hero-imagem">
     <div class="circulo">
-      <img src="images/cat.png" class="foto-circulo" />
+      <img
+        src="images/cat.png"
+        alt="Foto ilustrativa"
+        class="foto-circulo"
+      />
     </div>
   </div>
 </section>
-
-
-
-
-
-
-
-
 
 <router-outlet></router-outlet>

@@ -1,3 +1,5 @@
+/* nome enzo */
+
 .header {
   position: fixed;
   top: 20px;
@@ -5,21 +7,53 @@
   z-index: 1000;
 }
 
+.header-visual {
+  position: fixed;
+  top: 20px;
+  left: 40px;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* gap entre estrela e routers */
+
 .nav {
   display: flex;
   gap: 24px;
 }
 
 .nav a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
   color: white;
   text-decoration: none;
   font-weight: 500;
 }
 
 .nav a:hover {
-  color: #38bdf8;
+  color: #6366f1;
 }
 
+/* sou um */
 
 .hero {
   min-height: 100vh;
@@ -31,6 +65,8 @@
   background: radial-gradient(circle at right, #020617, #000);
   color: white;
 }
+
+/* texto principal */
 
 .hero-texto {
   max-width: 480px;
@@ -52,7 +88,8 @@
   margin-bottom: 32px;
 }
 
-/* button */
+/* buttons */
+
 .hero-texto button {
   padding: 14px 28px;
   font-size: 1rem;
@@ -65,7 +102,7 @@
   border-radius: 6px;
 
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hero-texto button:hover {
@@ -73,26 +110,26 @@
   color: #020617;
 }
 
-/* foto */
+/* foto circulo */
+
 .hero-imagem {
   display: flex;
-  justify-content: center;
   align-items: center;
-    transform: translateX(-50px); 
+  justify-content: center;
+
+  transform: translateX(-50px);
 }
 
 .circulo {
   width: 380px;
   height: 380px;
+
   background-color: #6366f1;
   border-radius: 50%;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin: 0;
-  padding: 0;
 }
 
 .foto-circulo {
@@ -104,30 +141,19 @@
   display: block;
 }
 
-
-.header-visual {
-  position: fixed;
-  top: 20px;
-  left: 40px;
-
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: white;
-
-  z-index: 1000;
-}
-
-.nav a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+/* estrela routers*/
 
 .estrela {
   transform: translateX(8px) rotate(15deg);
-  filter: drop-shadow(0 0 6px rgba(99, 102, 241, 0.6));
+  filter: drop-shadow(0 0 6px rgba(39, 40, 109, 0.6));
 }
+
+.estrela path {
+  fill: #6366f1;
+}
+
+.hero-botoes {
+  display: flex;
+  gap: 24px; 
+}
+
