@@ -1,8 +1,8 @@
-/* Fundo global do site */
+/* cor fundo global do site */
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #0f172a; /* azul escuro moderno */
+  background-color: #0f172a; 
   color: #e5e7eb;
   min-height: 100%;
 }
@@ -33,3 +33,90 @@ html, body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
 }
+
+
+/* headers */
+
+.header {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  z-index: 1000;
+}
+
+.header-visual {
+  position: fixed;
+  top: 20px;
+  left: 40px;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: white;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #6366f1;
+}
+
+/* estrelas */
+
+.estrela {
+  transform: translateX(8px) rotate(15deg);
+  filter: drop-shadow(0 0 6px rgba(39, 40, 109, 0.6));
+}
+
+.estrela path {
+  fill: currentColor;
+}
+
+/* texto estrela */
+.nav a {
+  color: white;
+}
+
+/* estrelas router */
+.nav a .estrela,
+.logo-link .estrela {
+  color: #6366f1;
+}
+
+.nav a:hover .estrela {
+  transform: translateX(12px) rotate(20deg);
+}
+
+.estrela {
+  transition: transform 0.3s ease;
+}
+
+
+

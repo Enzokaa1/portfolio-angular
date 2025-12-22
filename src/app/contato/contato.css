@@ -1,0 +1,60 @@
+.contato {
+  min-height: 100vh;
+  background: radial-gradient(circle at right, #020617, #000);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato-container {
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+}
+
+.contato-container h1 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+}
+
+.contato-container p {
+  color: #cbd5f5;
+  margin-bottom: 40px;
+}
+
+/* Cards */
+.contato-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  border-color: #6366f1;
+  transform: translateY(-4px);
+}
+
+.label {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.valor {
+  font-size: 1.1rem;
+  color: white;
+}

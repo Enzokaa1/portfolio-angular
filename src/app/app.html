@@ -1,1 +1,60 @@
-  <router-outlet></router-outlet>
+<!-- header visual do nome -->
+<header class="header-visual">
+  <a routerLink="" class="logo-link">
+    <svg class="estrela" width="18" height="18" viewBox="0 0 24 24">
+      <path
+        d="M12 2L14.9 8.6L22 9.3L16.5 14.1L18.2 21L12 17.5L5.8 21L7.5 14.1L2 9.3L9.1 8.6L12 2Z"
+        fill="currentColor"
+      />
+    </svg>
+    <span class="logo">Enzo Castanho</span>
+  </a>
+</header>
+
+<!-- rotas dos headers -->
+<header class="header">
+  <nav class="nav">
+    <a routerLink="" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">
+      <svg class="estrela" width="14" height="14" viewBox="0 0 24 24">
+        <path
+          d="M12 2L14.9 8.6L22 9.3L16.5 14.1L18.2 21L12 17.5L5.8 21L7.5 14.1L2 9.3L9.1 8.6L12 2Z"
+          fill="currentColor"
+        />
+      </svg>
+      Início
+    </a>
+
+    <a routerLink="projetos" routerLinkActive="active">
+      <svg class="estrela" width="14" height="14" viewBox="0 0 24 24">
+        <path
+          d="M12 2L14.9 8.6L22 9.3L16.5 14.1L18.2 21L12 17.5L5.8 21L7.5 14.1L2 9.3L9.1 8.6L12 2Z"
+          fill="currentColor"
+        />
+      </svg>
+      Projetos
+    </a>
+
+    <a routerLink="sobre-mim" routerLinkActive="active">
+      <svg class="estrela" width="14" height="14" viewBox="0 0 24 24">
+        <path
+          d="M12 2L14.9 8.6L22 9.3L16.5 14.1L18.2 21L12 17.5L5.8 21L7.5 14.1L2 9.3L9.1 8.6L12 2Z"
+          fill="currentColor"
+        />
+      </svg>
+      Sobre mim
+    </a>
+
+    <a routerLink="contato" routerLinkActive="active">
+      <svg class="estrela" width="14" height="14" viewBox="0 0 24 24">
+        <path
+          d="M12 2L14.9 8.6L22 9.3L16.5 14.1L18.2 21L12 17.5L5.8 21L7.5 14.1L2 9.3L9.1 8.6L12 2Z"
+          fill="currentColor"
+        />
+      </svg>
+      Contato
+    </a>
+  </nav>
+</header>
+
+
+<router-outlet></router-outlet>
