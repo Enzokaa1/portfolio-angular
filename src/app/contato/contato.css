@@ -24,7 +24,6 @@
   margin-bottom: 40px;
 }
 
-/* Cards */
 .contato-cards {
   display: flex;
   flex-direction: column;
@@ -40,6 +39,9 @@
   flex-direction: column;
   gap: 6px;
 
+  text-decoration: none;
+  color: white;
+
   transition: 0.3s;
 }
 
@@ -51,10 +53,66 @@
 .label {
   font-size: 0.85rem;
   color: #94a3b8;
-  text-transform: uppercase;
 }
 
 .valor {
   font-size: 1.1rem;
+}
+
+/* btn sem interação */
+.card-botao {
+  margin-top: 14px;
+
+  padding: 10px 16px;
+  width: fit-content;
+
+  border: 2px solid #6366f1;
+  border-radius: 6px;
+
+  color: #6366f1;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+/* Hover sincronizado */
+.card:hover .card-botao {
+  background: #6366f1;
+  color: #020617;
+}
+
+.contato-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #1e293b;
+  padding: 18px 20px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: left ;
+  gap: 14px;
+
+  transition: 0.25s;
+}
+
+.card:hover {
+  border-color: #6366f1;
+  transform: translateY(-3px);
+}
+
+.icone {
+  width: 22px;
+  height: 22px;
+  fill: #6366f1;
+  flex-shrink: 0;
+}
+
+.card span {
+  font-size: 1rem;
   color: white;
 }
+
