@@ -92,7 +92,7 @@
   border-radius: 10px;
 
   display: flex;
-  align-items: left ;
+  align-items: left;
   gap: 14px;
 
   transition: 0.25s;
@@ -173,7 +173,7 @@
 
 .contato-info {
   text-align: center;
-  animation: fadeUp 0.8s ease forwards;
+  animation: fadeDown 0.8s ease forwards;
 }
 
 .contato-info h1 {
@@ -190,7 +190,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 
-  animation: fadeUp 1s ease forwards;
+  animation: fadeDown 1s ease forwards;
 }
 
 .card {
@@ -230,7 +230,7 @@
 }
 
 .card-botao {
-    padding: 8px 14px;
+  padding: 8px 14px;
   border: 2px solid #6366f1;
   border-radius: 6px;
 
@@ -252,10 +252,10 @@
   }
 }
 
-@keyframes fadeUp {
+@keyframes fadeDown {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(-20px);
   }
   to {
     opacity: 1;

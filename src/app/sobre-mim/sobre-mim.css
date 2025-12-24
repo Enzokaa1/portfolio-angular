@@ -16,6 +16,7 @@
   display: grid;
   grid-template-columns: 320px 1fr;
   gap: 60px;
+  animation: fadeUp 0.8s ease forwards;
 }
 
 .sobre-foto {
@@ -85,5 +86,16 @@
 
   .sobre-dados {
     justify-content: center;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
