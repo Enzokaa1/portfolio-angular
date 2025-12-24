@@ -1,4 +1,4 @@
-# 👨‍💻 Portfólio — Enzo Castanho
+# 👨‍💻 Portfólio pessoal
 
 Repositório com projetos desenvolvidos durante meus estudos em Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento front-end e aplicações web.
 
