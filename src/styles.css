@@ -2,31 +2,29 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #0f172a;
+  background: radial-gradient(circle at right, #020617, #000);
   color: #e5e7eb;
   min-height: 100%;
   font-family: 'Roboto', sans-serif;
 }
 
+/* fontes */
 @font-face {
   font-family: 'Roboto';
   src: url('/fonts/Roboto-Regular.ttf') format('truetype');
   font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
   src: url('/fonts/Roboto-Medium.ttf') format('truetype');
   font-weight: 500;
-  font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
   src: url('/fonts/Roboto-Bold.ttf') format('truetype');
   font-weight: 700;
-  font-style: normal;
 }
 
 .header {
@@ -55,7 +53,6 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-
   color: white;
   text-decoration: none;
 }
@@ -73,6 +70,7 @@ body {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .nav a:hover,
@@ -90,7 +88,6 @@ body {
   fill: currentColor;
 }
 
-/* estrelas router */
 .nav a .estrela,
 .logo-link .estrela {
   color: #6366f1;
@@ -100,22 +97,45 @@ body {
   transform: translateX(12px) rotate(20deg);
 }
 
+
 @media (max-width: 768px) {
-  .header {
-    right: 50%;
-    transform: translateX(50%);
-    top: 80px;
-  }
 
   .header-visual {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    transform: none;
+
+    justify-content: center;
+    width: 100%;
+    padding: 8px 0; 
+  background: radial-gradient(circle at right, #020617, #000);
+  }
+
+  .header {
+    position: sticky;
+    top: 40px; 
+    right: 0;
+    transform: none;
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 6px 0; 
+  background: radial-gradient(circle at right, #020617, #000);
   }
 
   .nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
+    flex-direction: row;
+    gap: 14px; 
+  }
+
+  .nav a {
+    font-size: 0.85rem;
+  }
+
+  router-outlet {
+    display: block;
+    margin-top: 88px; 
   }
 }

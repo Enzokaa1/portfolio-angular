@@ -1,16 +1,3 @@
-# 👨‍💻 Portfólio — Enzo Castanho
-
-Repositório com projetos desenvolvidos durante meus estudos em Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento front-end e aplicações web.
-
----
-
-## 🧠 Sobre mim
-
-Sou estudante de Análise e Desenvolvimento de Sistemas, com interesse em desenvolvimento front-end e aplicações web.  
-Busco constantemente aprimorar meus conhecimentos por meio de projetos práticos, explorando tecnologias modernas e aplicando conceitos utilizados em ambientes profissionais.
-
----
-
 ## 🚀 Tecnologias e Ferramentas
 
 - Angular
@@ -20,14 +7,6 @@ Busco constantemente aprimorar meus conhecimentos por meio de projetos práticos
 - CSS3
 - Bootstrap
 - Git e GitHub
-
----
-
-## 🎯 Objetivo do Portfólio
-
-Este portfólio tem como objetivo demonstrar minha evolução técnica, capacidade de resolver problemas e aplicação prática dos conhecimentos adquiridos durante a graduação e estudos independentes.
-
-Os projetos refletem meu comprometimento com aprendizado contínuo e práticas de desenvolvimento de software.
 
 ---
 
