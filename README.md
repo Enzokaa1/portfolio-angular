@@ -1,3 +1,16 @@
+## Funcionalidades
+
+- Aba Início com apresentação geral do portfólio
+- Aba Projetos com listagem dos projetos desenvolvidos
+- Aba Sobre mim com informações pessoais e profissionais
+- Aba Contato com formas de contato
+- Layout responsivo
+- Navegação simples e objetiva
+
+<img width="1868" height="927" alt="portpage" src="https://github.com/user-attachments/assets/40824bef-de98-42e6-aab9-ea3560ebd978" />
+
+---
+
 ## 🚀 Tecnologias e Ferramentas
 
 - Angular
