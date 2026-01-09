@@ -45,6 +45,22 @@
       </svg>
       Contato
     </a>
+    <div class="lang-switch">
+      <button
+        [class.active]="language === 'pt'"
+        (click)="setLang('pt')"
+      >
+        PT
+      </button>
+      <button
+        [class.active]="language === 'en'"
+        (click)="setLang('en')"
+      >
+        EN
+      </button>
+    </div>
+
+    
   </nav>
 </header>
 

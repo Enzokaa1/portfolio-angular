@@ -8,4 +8,10 @@ import { RouterLink, RouterOutlet , RouterLinkActive,} from '@angular/router';
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
-export class App {}
+export class App {
+  language: 'pt' | 'en' = 'pt';
+
+  setLang(lang: 'pt' | 'en') {
+    this.language = lang;
+  }
+}
